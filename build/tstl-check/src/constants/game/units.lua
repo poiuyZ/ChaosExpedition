@@ -1,0 +1,30 @@
+local ____exports = {}
+--- 游戏单位相关常量定义
+____exports.HERO_ARCHMAGE = "Hamg"
+____exports.HERO_MOUNTAIN_KING = "Hmkg"
+____exports.HERO_PALADIN = "Hpal"
+____exports.HERO_BLOOD_MAGE = "Hblm"
+____exports.UNIT_PEASANT = "hpea"
+____exports.UNIT_FOOTMAN = "hfoo"
+____exports.UNIT_RIFLEMAN = "hrif"
+____exports.UNIT_KNIGHT = "hkni"
+____exports.UNIT_STATE_LIFE = ConvertUnitState(0)
+____exports.UNIT_STATE_MAX_LIFE = ConvertUnitState(1)
+____exports.UNIT_STATE_MANA = ConvertUnitState(2)
+____exports.UNIT_STATE_MAX_MANA = ConvertUnitState(3)
+____exports.UNIT_TYPE_HERO = ConvertUnitType(0)
+____exports.UNIT_TYPE_DEAD = ConvertUnitType(1)
+____exports.UNIT_TYPE_STRUCTURE = ConvertUnitType(2)
+____exports.UNIT_TYPE_FLYING = ConvertUnitType(3)
+____exports.UNIT_TYPE_GROUND = ConvertUnitType(4)
+____exports.ATTACK_TYPE_NORMAL = ConvertAttackType(0)
+____exports.ATTACK_TYPE_PIERCE = ConvertAttackType(1)
+____exports.ATTACK_TYPE_SIEGE = ConvertAttackType(2)
+____exports.ATTACK_TYPE_MAGIC = ConvertAttackType(5)
+____exports.ARMOR_TYPE_UNARMORED = ConvertDamageType(0)
+____exports.ARMOR_TYPE_LIGHT = ConvertDamageType(1)
+____exports.ARMOR_TYPE_MEDIUM = ConvertDamageType(2)
+____exports.ARMOR_TYPE_HEAVY = ConvertDamageType(3)
+____exports.ARMOR_TYPE_FORTIFIED = ConvertDamageType(4)
+____exports.ARMOR_TYPE_HERO = ConvertDamageType(5)
+return ____exports
