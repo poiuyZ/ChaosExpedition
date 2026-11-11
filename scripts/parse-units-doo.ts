@@ -93,7 +93,7 @@ function readUnknownBytes(buffer: Buffer, offset: number, size: number, relative
 
 export function parseWar3mapUnitsDoo(buffer: Buffer): ParsedDoo {
   ensureRange(buffer, 0, HEADER_SIZE, "W3do header");
-  if (buffer.toString("ascii", 0, 4) !== "W3do") {
+  if (!buffer.subarray(0, 4).equals(Buffer.from("W3do", "ascii"))) {
     throw new Error(`Invalid W3do magic: ${JSON.stringify(buffer.toString("latin1", 0, 4))}`);
   }
 

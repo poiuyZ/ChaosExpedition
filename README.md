@@ -60,6 +60,16 @@ yarn build
 | `yarn watch` | 仅监听 TypeScript 文件变化 |
 | `yarn build:map` | 仅打包地图（不编译） |
 | `yarn test:map` | 仅运行地图（经 KKWE 启动，不编译） |
+| `yarn parse:units <file>` | 只读解析 W3do 单位摆放文件并将 JSON 输出到标准输出 |
+| `yarn test:parse:units` | 运行 W3do 解析器的离线测试 |
+
+### 解析 war3mapUnits.doo
+
+```bash
+yarn parse:units maps/map/war3mapUnits.doo
+```
+
+解析器只读取输入文件，不调用地图构建或游戏工具。未确认语义的字节以 `unknownFields` 原始十六进制输出；朝向字段的单位也标记为 `unknown`。
 
 ## ⚡ 开发模式 vs 生产模式
 
