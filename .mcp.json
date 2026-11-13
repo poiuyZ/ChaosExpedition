@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "kkwe": {
+      "type": "http",
+      "url": "http://127.0.0.1:19816/mcp",
+      "tools": [
+        "ping",
+        "get_map_info"
+      ]
+    }
+  }
+}
